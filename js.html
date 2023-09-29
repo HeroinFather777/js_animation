@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Demo of changing position of an Image in JavaScript</title>
+<title>Flying arrow</title>
 <script language='JavaScript' type='text/JavaScript'>
 <!--
 function move_img(str) {
-var step=50; // change this to different step value
+var step=50;
 switch(str){
 case "down":
 var x=document.getElementById('i1').offsetTop;
@@ -32,11 +32,11 @@ document.getElementById('i1').style.left= y + "px";
 break;
 }
 }
-//-->
+
 </script>
 </head>
 <body>
-<img src=images/help.jpg id='i1' 
+<img src="arrow.png" id='i1' 
   style="position:absolute; left: 500; top: 100;">
 <br><br><br><br>
 <input type=button onClick=move_img('up') value='Up'>
